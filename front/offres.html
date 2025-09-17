@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offres d'emploi - JobIA</title>
+  <link rel="stylesheet" href="css/offres.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="offres-page">
+    <form class="filters" id="filter-form">
+      <h2>Filtrer les offres</h2>
+      <input type="text" id="search" placeholder="Rechercher un poste, une entreprise..." class="filter-search">
+
+      <select id="location">
+        <option value="">Chargement...</option>
+      </select>
+      
+      <select id="contract">
+        <option value="">Chargement...</option>
+      </select>      
+
+      <label for="compatibility">Compatibilité IA minimum</label>
+      <input type="range" id="compatibility" min="0" max="100" value="50">
+      <span id="compatibility-value">≥ 50%</span>
+
+      <button class="btn-secondary" type="submit">Appliquer les filtres</button>
+    </form>
+
+    <section class="job-results">
+      <h2>Résultats de votre recherche</h2>
+      <div class="job-list">
+        <p class="initial-message">Utilisez les filtres ci-dessus pour afficher les offres disponibles.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="script/offres.js"></script>
+</body>
+</html>

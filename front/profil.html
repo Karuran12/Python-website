@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mon Profil - JobIA</title>
+    <link rel="stylesheet" href="css/profil.css" />
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <div class="profile-container">
+            <div class="profile-header">
+                <h1>Mon Profil</h1>
+                <p>Complétez votre profil pour augmenter vos chances</p>
+            </div>
+
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" name="nom" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required readonly />
+                </div>
+
+                <div class="form-group">
+                    <label for="titre">Titre professionnel</label>
+                    <input type="text" id="titre" name="titre" placeholder="Ex: Développeur Full Stack" />
+                </div>
+
+                <div class="form-group">
+                    <label for="competences">Compétences</label>
+                    <textarea id="competences" name="competences" placeholder="Listez vos compétences séparées par des virgules"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Expérience professionnelle</label>
+                    <textarea id="experience" name="experience" placeholder="Décrivez votre expérience professionnelle"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="formation">Formation</label>
+                    <textarea id="formation" name="formation" placeholder="Décrivez votre parcours académique"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="recherche">Ce que je recherche</label>
+                    <textarea id="recherche" name="recherche" placeholder="Décrivez le type de poste que vous recherchez"></textarea>
+                </div>
+
+                <div class="documents-section">
+                    <h3>Documents</h3>
+
+                    <div class="form-group">
+                        <label>CV (PDF uniquement)</label>
+                        <div class="file-upload">
+                            <label for="cv">Choisir un fichier</label>
+                            <input type="file" id="cv" name="cv" accept=".pdf" />
+                            <div class="file-name" id="cv-name">Aucun fichier sélectionné</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Lettre de motivation (PDF uniquement)</label>
+                        <div class="file-upload">
+                            <label for="lettre-motivation">Choisir un fichier</label>
+                            <input type="file" id="lettre-motivation" name="lettre-motivation" accept=".pdf" />
+                            <div class="file-name" id="lettre-motivation-name">Aucun fichier sélectionné</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Enregistrer les modifications</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script/profil.js"></script>
+</body>
+</html>

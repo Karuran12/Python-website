@@ -1,0 +1,242 @@
+/* === RESET / BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* === HERO === */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #ffdc80, #fcbc00);
+  color: #000;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* === SEARCH === */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.search-container input,
+.search-container select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.search-container button {
+  padding: 0.8rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #333;
+}
+
+/* === FILTRES === */
+.filters {
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.filters h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.filters input[type="range"] {
+  width: 100%;
+}
+
+#compatibility-value {
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* === JOB RESULTS === */
+.job-results {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.job-results h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.job-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card .company-logo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.job-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-card .company {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-card .match {
+  color: #ffb400;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.job-card .tag {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+.job-card .description {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .filters {
+    padding: 1rem;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .job-card {
+    padding: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.loading, .no-results, .error {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.loading {
+  color: #666;
+}
+
+.no-results button, .error button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.match.high {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.match.medium {
+  color: #ffc107;
+}
+
+.match.low {
+  color: #dc3545;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  background: #e9ecef;
+}
+
+.tag.cdi { background: #d4edda; color: #155724; }
+.tag.cdd { background: #fff3cd; color: #856404; }
+.tag.alternance { background: #cce5ff; color: #004085; }
+.tag.freelance { background: #f8d7da; color: #721c24; }
+.tag.stage { background: #e2e3e5; color: #383d41; }

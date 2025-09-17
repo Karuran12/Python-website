@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobIA - Trouvez le job parfait grâce à l'IA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="popup-message" style="
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: -300px;
+    background: #f4c127;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: left 0.5s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    ">
+    </div>
+    <div id="navbar-placeholder"></div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Trouvez le job parfait grâce à notre IA</h1>
+            <p class="subtitle">L'analyse intelligente de votre profil pour des matchs pertinents</p>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Métier, compétence, entreprise...">
+                <input type="text" placeholder="Ville ou télétravail">
+                <button class="btn-primary">Rechercher</button>
+            </div>
+            
+            <div class="stats">
+                <span>+ de 50 000 offres analysées</span>
+                <span>•</span>
+                <span>92% de pertinence</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Comment JobIA révolutionne votre recherche</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">🤖</div>
+                <h3>Matching intelligent</h3>
+                <p>Notre IA analyse CV, compétences ET personnalité pour des suggestions ultra-pertinentes.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📊</div>
+                <h3>Dashboard recruteur</h3>
+                <p>Des statistiques précises sur chaque candidat et prédictions de performance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🧠</div>
+                <h3>Analyse sémantique</h3>
+                <p>Nous comprenons le contexte de vos compétences, pas juste les mots-clés.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-jobs">
+  <h2>Offres récentes pour vous</h2>
+  <div class="jobs-carousel"></div>
+  <a href="offres.html" class="btn-secondary">Voir toutes les offres</a>
+</section>
+
+    <section class="companies">
+        <h2>Entreprises qui recrutent</h2>
+        <div class="companies-scroller"></div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Prêt à trouver votre job idéal ?</h2>
+            <p>Créez votre profil et laissez notre IA travailler pour vous</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">Je cherche un job</a>
+                <a href="#" class="btn-secondary">Je recrute</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script/accueil.js"></script>    
+</body>
+</html>

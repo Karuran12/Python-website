@@ -1,0 +1,135 @@
+.profile-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile-header h1 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-header p {
+            color: #666;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .file-upload {
+            margin-top: 1rem;
+        }
+
+        .file-upload label {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #f0f0f0;
+            color: #333;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 1rem;
+        }
+
+        .file-upload input[type="file"] {
+            display: none;
+        }
+
+        .file-name {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .btn-submit {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #45a049;
+        }
+
+        .documents-section {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+.user-header {
+    background: linear-gradient(135deg, #ffdc80, #fcbc00);
+    padding: 3rem 2rem;
+    text-align: center;
+    color: #000;
+}
+
+.user-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f1f1f1;
+    font-size: 0.9rem;
+    color: #777;
+}
